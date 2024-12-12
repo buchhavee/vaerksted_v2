@@ -9,7 +9,6 @@
 
 .hero-image {
   max-height: 100svh;
-  overflow: hidden;
 }
 
 .hero-image video {
@@ -99,4 +98,17 @@ button svg {
   position: relative;
   width: 15px;
   transition-delay: 0.2s;
+}
+
+/** grid **/
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/** section **/
+
+section {
+  margin-top: 100svh;
 }
