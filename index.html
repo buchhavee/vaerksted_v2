@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaerkstedet</title>
+    <link rel="stylesheet" href="CSS/mutual.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-content">
+                    <div class="navbar-logo">
+                        <a href="/" class="logo-link">Vaerkstedet</a>
+                    </div>
+                    <div class="navbar-menu">
+                        <a href="index.html" class="menu-item">Hjem</a>
+                        <a href="smykker.html" class="menu-item">Smykker</a>
+                        <a href="om_os.html" class="menu-item">Om os</a>
+                        <a href="designers.html" class="menu-item">Designers</a>
+                        <a href="vaerkstedet.html" class="menu-item">Værkstedet</a>
+                    </div>
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <span class="menu-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <div class="mobile-menu-container">
+                <div class="mobile-menu-header">
+                    <button class="close-menu" aria-label="Close menu">
+                        <span class="menu-icon close-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+                <nav class="mobile-nav">
+                    <a href="index.html" class="menu-item">Hjem</a>
+                    <a href="smykker.html" class="menu-item">Smykker</a>
+                    <a href="om_os.html" class="menu-item">Om os</a>
+                    <a href="designers.html" class="menu-item">Designers</a>
+                    <a href="vaerkstedet.html" class="menu-item">Værkstedet</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-image">
+            <video autoplay muted loop>
+                <source src="video/hero_video.mp4" type="video/mp4">Your browser does not support the video tag.
+            </video>
+            <dotlottie-player src="https://lottie.host/1d956470-53f5-4c33-a33e-264099c2a106/nLzda3c7Xn.lottie"
+                background="transparent" speed="1" style="width: 150px; height: 150px" loop autoplay
+                class="scroll_lottie"></dotlottie-player>
+        </div>
+
+        <div class="hero_text">
+            <h2>
+                Forestil dig en smykkebutik
+            </h2>
+            <p>
+                Der elsker kærligheden, som dyrker unika, <br> værner om kundeoplevelsen og som tror <br> på
+                bæredygtighed.
+            </p>
+
+            <button>
+                <p>Udforsk</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+    <script src="JS/menu.js"></script>
+</body>
+
+</html>

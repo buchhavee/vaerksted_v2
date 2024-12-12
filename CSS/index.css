@@ -1,0 +1,102 @@
+/** Hero image styling **/
+
+.hero_text {
+  color: white;
+  padding-left: 8rem;
+  position: absolute;
+  bottom: 35%;
+}
+
+.hero-image {
+  max-height: 100svh;
+  overflow: hidden;
+}
+
+.hero-image video {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.scroll_lottie {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  filter: invert(100%);
+}
+
+/* Styling af knap */
+
+button {
+  padding: 0;
+  margin-top: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button {
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+button p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--white);
+}
+
+button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--gold);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+button p::before {
+  position: absolute;
+  content: "Udforsk";
+  width: 0%;
+  inset: 0;
+  color: var(--gold);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+button:hover::after {
+  width: 100%;
+}
+
+button:hover p::before {
+  width: 100%;
+}
+
+button:hover svg {
+  transform: translateX(4px);
+  color: var(--gold);
+}
+
+button svg {
+  color: var(--white);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
