@@ -37,18 +37,24 @@ body {
   font-size: 1.5rem;
 }
 
-p {
+.p_1 {
   font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.p_2 {
+  font-size: 0.9rem;
+  margin-right: 10px;
 }
 
 .img1_om_os {
   background-image: url(/Billeder/img1_om_os.webp);
   right: 0;
-  margin-right: 5%;
+  margin-right: 10px;
   width: 100%;
   height: 300px;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .img2_om_os {
@@ -58,7 +64,7 @@ p {
   width: 100%;
   height: 300px;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* main // grid - mobile */
@@ -68,4 +74,6 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
