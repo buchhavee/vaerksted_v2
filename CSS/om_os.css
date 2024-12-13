@@ -63,12 +63,6 @@ body {
   overflow: hidden;
 }
 
-.img1_om_os:hover {
-  border-radius: 0.5rem;
-  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.664);
-  transition: box-shadow 0.3s ease;
-}
-
 .img2_om_os {
   background-image: url(../Billeder/img2_om_os.webp);
   left: 0;
@@ -78,13 +72,6 @@ body {
   height: 300px;
   background-size: cover;
   border-radius: 5px;
-}
-
-.img2_om_os:hover {
-  border-radius: 0.5rem;
-
-  box-shadow: -10px -10px 8px rgba(0, 0, 0, 0.664);
-  transition: box-shadow 0.3s ease;
 }
 
 /* main // grid - mobile */
