@@ -18,8 +18,10 @@ body {
 }
 
 .h1_1 {
+  position: absolute;
   display: flex;
-  margin-top: 300px;
+  margin-top: 325px;
+  margin-left: 10px;
   margin-bottom: 20px;
   background-size: cover;
   background-position: center;
@@ -28,8 +30,8 @@ body {
 }
 
 .h1_2 {
+  position: absolute;
   display: flex;
-  margin-top: 50px;
   margin-bottom: 20px;
   background-size: cover;
   background-position: center;
@@ -38,21 +40,24 @@ body {
 }
 
 .p_1 {
-  font-size: 0.9rem;
+  margin-top: 395px;
+  font-size: 1rem;
   margin-left: 10px;
 }
 
 .p_2 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-right: 10px;
+  margin-top: 100px;
 }
 
 .img1_om_os {
   background-image: url(/Billeder/img1_om_os.webp);
   right: 0;
   margin-right: 10px;
+  margin-top: 400px;
   width: 100%;
-  height: 300px;
+  height: 325px;
   background-size: cover;
   border-radius: 5px;
 }
@@ -61,6 +66,7 @@ body {
   background-image: url(/Billeder/img2_om_os.webp);
   left: 0;
   padding-right: 5px;
+  margin-top: 75px;
   width: 100%;
   height: 300px;
   background-size: cover;
@@ -76,4 +82,107 @@ body {
   margin-bottom: 40px;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .hero-image {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    background-image: url(/Billeder/om_os_hero.webp);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .h1_div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .h1_1 {
+    position: absolute;
+    display: flex;
+    margin-top: 650px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  .h1_2_div {
+    display: flex;
+    justify-content: right;
+  }
+
+  .h1_2 {
+    position: absolute;
+    display: flex;
+    order: 5;
+    margin-top: 125px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  .p_div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .p_1 {
+    text-align: center;
+    max-width: 375px;
+    margin-top: 750px;
+    font-size: 1.25rem;
+    margin-left: 10px;
+  }
+
+  .p_2 {
+    text-align: center;
+    max-width: 275px;
+    font-size: 1.25rem;
+    margin-right: 10px;
+    margin-top: 200px;
+  }
+
+  .img1_om_os {
+    background-image: url(/Billeder/img1_om_os.webp);
+    right: 0;
+    margin-right: 10px;
+    margin-top: 595px;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    border-radius: 5px;
+  }
+
+  .img2_om_os {
+    background-image: url(/Billeder/img2_om_os.webp);
+    left: 0;
+    padding-right: 5px;
+    margin-top: 0px;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    border-radius: 5px;
+  }
+
+  /* main // grid - mobile */
+
+  .grid_om_os {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 12.5px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
