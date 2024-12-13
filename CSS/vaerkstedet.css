@@ -1,0 +1,76 @@
+/********** style **********/
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+form {
+  background-color: rgb(248, 245, 245);
+  font-family: "sweet-sans-pro", sans-serif;
+  font-size: 1rem;
+}
+
+h2 {
+  font-family: the-seasons, sans-serif;
+}
+
+p {
+  font-family: "sweet-sans-pro", sans-serif;
+}
+
+/**********  menu **********/
+.logo-link {
+  font-family: sloop-script-pro, sans-serif;
+}
+
+.menu-item {
+  color: #000000;
+  font-family: the-seasons, sans-serif;
+}
+
+.logo-link {
+  color: #000000;
+}
+
+.menu-icon span {
+  background: #000000;
+}
+
+/********** layout **********/
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  margin-inline: 30px;
+}
+
+.mobile_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  h2 {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 762px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .mobile_1-1 {
+    grid-template-rows: auto 1fr;
+    h2 {
+      grid-column: span 1;
+    }
+    img {
+      grid-column: 2/3;
+      grid-row: span 2;
+    }
+  }
+}
