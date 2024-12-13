@@ -11,7 +11,7 @@ body {
   left: 0;
   width: 100%;
   height: 400px;
-  background-image: url(/Billeder/om_os_hero.webp);
+  background-image: url(/vaerksted_v2/Billeder/om_os_hero.webp);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -52,7 +52,7 @@ body {
 }
 
 .img1_om_os {
-  background-image: url(/Billeder/img1_om_os.webp);
+  background-image: url(/vaerksted_v2/Billeder/img1_om_os.webp);
   right: 0;
   margin-right: 10px;
   margin-top: 400px;
@@ -63,7 +63,7 @@ body {
 }
 
 .img2_om_os {
-  background-image: url(/Billeder/img2_om_os.webp);
+  background-image: url(/vaerksted_v2/Billeder/img2_om_os.webp);
   left: 0;
   padding-right: 5px;
   margin-top: 75px;
@@ -92,7 +92,7 @@ body {
     left: 0;
     width: 100%;
     height: 750px;
-    background-image: url(/Billeder/om_os_hero.webp);
+    background-image: url(/vaerksted_v2/Billeder/om_os_hero.webp);
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -154,7 +154,7 @@ body {
   }
 
   .img1_om_os {
-    background-image: url(/Billeder/img1_om_os.webp);
+    background-image: url(/vaerksted_v2/Billeder/img1_om_os.webp);
     right: 0;
     margin-right: 10px;
     margin-top: 595px;
@@ -165,7 +165,7 @@ body {
   }
 
   .img2_om_os {
-    background-image: url(/Billeder/img2_om_os.webp);
+    background-image: url(/vaerksted_v2/Billeder/img2_om_os.webp);
     left: 0;
     padding-right: 5px;
     margin-top: 0px;
