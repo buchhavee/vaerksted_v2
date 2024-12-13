@@ -61,6 +61,7 @@
     </header>
 
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-image">
             <video autoplay muted loop>
                 <source src="video/hero_video.mp4" type="video/mp4">Your browser does not support the video tag.
@@ -80,7 +81,7 @@
             </p>
 
             <button>
-                <p>Udforsk</p>
+                Udforsk
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -91,36 +92,86 @@
 
     <section>
         <div class="grid_1-1-1">
-            <div>
-                <h2>Designers</h2>
-                <img src="Billeder/index_billeder/designers.webp" alt="designers">
-                <p>
-                    Vaerkstedet eksponerer en række dygtige designere, i butikken i Ryesgade. Vi glæder os til at vise
-                    jer vores store
-                    udvalg
-                </p>
-                <button>Lær mere</button>
+            <!-- Designers Card -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Billeder/index_billeder/designers.webp" alt="Designers">
+                </div>
+                <div class="card-content">
+                    <h2>Designers</h2>
+                    <p>Vaerkstedet eksponerer en række dygtige designere, i butikken i Ryesgade. Vi glæder os til at
+                        vise jer vores
+                        store udvalg</p>
+                    <button class="learn-more">
+                        Lær mere
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div>
-                <h2>Om os</h2>
-                <img src="Billeder/index_billeder/om_os.webp" alt="om os">
-                <p>
-                    Nær søerne, med Ravnsborggade som nabo, ligger Vaerkstedet.
-                    Vi har smykker til at alle anledninger og i alle prisniveauer
-                </p>
-                <button>Lær mere</button>
+
+            <!-- Om os Card -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Billeder/index_billeder/om_os.webp" alt="Om os">
+                </div>
+                <div class="card-content">
+                    <h2>Om os</h2>
+                    <p>Nær søerne, med Ravnsborggade som nabo, ligger Vaerkstedet. Vi har smykker til at alle
+                        anledninger og i alle
+                        prisniveauer</p>
+                    <button class="learn-more">
+                        Lær mere
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div>
-                <h2>Værkstedet</h2>
-                <img src="Billeder/index_billeder/vaerkstedet.webp" alt="værkstedet">
-                <p>
-                    Vaerkstedet dyrker kundeplejen. Smykkedesignere har en naturlig fascination af ædelmetallers
-                    skønhed.
-                </p>
-                <button>Lær mere</button>
+
+            <!-- Værkstedet Card -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Billeder/index_billeder/vaerkstedet.webp" alt="Værkstedet">
+                </div>
+                <div class="card-content">
+                    <h2>Værkstedet</h2>
+                    <p>Vaerkstedet dyrker kundeplejen. Smykkedesignere har en naturlig fascination af ædelmetallers
+                        skønhed.</p>
+                    <button class="learn-more">
+                        Lær mere
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div></div>
+        <div>
+            <h1>Vaerkstedet</h1>
+            <p>Håndlavet elegance siden 2015</p>
+        </div>
+        <div>
+            <h1>Kontakt</h1>
+            <p>Ryesgade 4</p>
+            <p>Copenhagen, Denmark</p>
+            <p>info@vaerk-stedet.dk</p>
+        </div>
+        <div>
+            <h1>Følg os</h1>
+            <p>Facebook <br> Instagram <br> Pinterest </p>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 Vaerkstedet. Alle rettigheder forbeholdes.</p>
+        </div>
+    </footer>
+
     <script src="JS/menu.js"></script>
 </body>
 

@@ -30,6 +30,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.6;
   font-size: 1.4rem;
+  background-color: var(--white);
 }
 
 /** Styling af menu **/
@@ -79,7 +80,7 @@ body {
 }
 
 .menu-item:hover {
-  background-color: #061432;
+  background-color: #061432a0;
 }
 
 .menu-toggle {
@@ -233,19 +234,22 @@ footer {
   justify-content: space-between;
   padding: 20px;
   width: 100%;
+  height: 50svh;
   background-color: #061432;
   color: white;
   font-family: Arial, sans-serif;
 }
 
 footer h1 {
-  margin: 0;
-  font-size: 1rem;
+  margin-inline: 30px;
+  margin-bottom: 40px;
+  font-size: 2.6rem;
 }
 
 footer p {
   margin: 5px 0;
-  font-size: 0.75rem;
+  margin-inline: 30px;
+  font-size: 1.5rem;
 }
 
 .footer-left,
@@ -265,6 +269,13 @@ footer p {
 
 .footer-right {
   text-align: right;
+}
+
+footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 footer p a {
