@@ -125,8 +125,9 @@ button svg {
 /** section **/
 
 section {
-  margin-top: 50svh;
+  margin-top: 40svh;
   margin-bottom: 10svh;
+  padding-block: 50px;
   max-width: 2000px;
   margin-inline: auto;
 }
@@ -149,6 +150,7 @@ section {
   position: relative;
   overflow: hidden;
   padding-top: 75%;
+  height: 5%;
 }
 
 .card-image img {
@@ -227,7 +229,8 @@ footer {
     bottom: 30%;
   }
   section {
-    margin-top: 50svh;
+    margin-top: 38svh;
+    padding-block: 50px;
   }
 }
 
