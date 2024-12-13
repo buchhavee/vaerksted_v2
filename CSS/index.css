@@ -148,7 +148,7 @@ section {
 .card-image {
   position: relative;
   overflow: hidden;
-  padding-top: 75%; /* 4:3 Aspect Ratio */
+  padding-top: 75%;
 }
 
 .card-image img {

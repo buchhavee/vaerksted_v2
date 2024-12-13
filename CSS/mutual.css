@@ -91,10 +91,23 @@ body {
   padding: 0.4rem 1rem;
   border-radius: 0.8rem;
   transition: background-color 0.4s;
+  position: relative;
 }
 
-.menu-item:hover {
-  background-color: #061432a0;
+.menu-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--gold);
+  transition: width 0.3s ease-out, left 0.3s ease-out;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .menu-toggle {
@@ -171,11 +184,13 @@ body {
   right: 0;
   bottom: 0;
   width: 16rem;
-  background-color: #a5a3a3;
+  background-color: rgb(195, 195, 195);
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .mobile-menu.active {
@@ -207,10 +222,9 @@ body {
   gap: 1rem;
 }
 
-.mobile-menu-item {
+.mobile-nav {
   color: #333;
   text-decoration: none;
-  font-size: 1rem;
   text-align: center;
 }
 
