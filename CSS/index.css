@@ -6,7 +6,7 @@
 .hero_text {
   color: white;
   position: absolute;
-  bottom: 35%;
+  bottom: 20%;
   left: 5%;
   transition: ease 0.4s;
 }
@@ -60,7 +60,6 @@ button {
   position: relative;
   display: flex;
   font-weight: 600;
-  font-size: 20px;
   gap: 0.8rem;
   align-items: center;
 }
@@ -68,7 +67,7 @@ button {
 button {
   margin: 0;
   position: relative;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--white);
 }
 
@@ -120,7 +119,7 @@ button svg {
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;
-  margin-inline: 100px;
+  margin-inline: 30px;
 }
 
 /** section **/
@@ -171,7 +170,6 @@ section {
 }
 
 .card-content h2 {
-  font-size: 1.5rem;
   margin-bottom: 0.75rem;
   color: #1a1a1a;
 }
@@ -214,14 +212,19 @@ section {
   transform: translateX(4px);
 }
 
+/** Footer **/
+footer {
+  overflow: hidden;
+}
+
 /** Media querries **/
 
 @media (min-width: 768px) {
   .hero_text {
     color: white;
-    padding-left: 12rem;
+    padding-left: 8rem;
     position: absolute;
-    bottom: 35%;
+    bottom: 30%;
   }
   section {
     margin-top: 50svh;
