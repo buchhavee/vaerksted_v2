@@ -11,6 +11,11 @@
   transition: ease 0.4s;
 }
 
+.hero_text h2 {
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+}
+
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -133,6 +138,16 @@ section {
 }
 
 /** call cards **/
+
+.section_heading {
+  font-family: "swear-display", serif;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  font-size: 4rem;
+  opacity: 30%;
+  margin-bottom: 40px;
+}
 
 .card {
   background-color: #fff;

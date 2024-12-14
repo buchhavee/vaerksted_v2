@@ -26,6 +26,15 @@ h2 {
 
 p {
   font-size: 1.2rem;
+  font-family: "asterisk-sans-variable", sans-serif;
+  font-variation-settings: "wght" 400;
+}
+
+button,
+a {
+  font-family: "swear-display", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 /** CSS variabler **/
