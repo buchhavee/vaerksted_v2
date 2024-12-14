@@ -62,14 +62,14 @@ body {
   height: 325px;
   background-size: cover;
   border-radius: 5px;
-  overflow: hidden;
 }
 
 .img2_om_os {
-  background-image: url(../Billeder/om-os_billeder/img2_om_os.webp);
+  background-image: url(../Billeder/om-os_billeder/img3_om_os.webp);
   left: 0;
   padding-right: 5px;
   margin-top: 75px;
+  margin-bottom: 25px;
   width: 100%;
   height: 300px;
   background-size: cover;
@@ -100,6 +100,7 @@ body {
     width: 100%;
     height: 750px;
     background-image: url(../Billeder/om-os_billeder/om_os_hero.webp);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -172,10 +173,11 @@ body {
   }
 
   .img2_om_os {
-    background-image: url(../Billeder/om-os_billeder/img2_om_os.webp);
+    background-image: url(../Billeder/om-os_billeder/img3_om_os.webp);
     left: 0;
     padding-right: 5px;
     margin-top: 0px;
+    margin-bottom: 100px;
     width: 100%;
     height: 600px;
     background-size: cover;
