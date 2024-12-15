@@ -114,7 +114,7 @@ body {
   .h1_1 {
     position: absolute;
     display: flex;
-    margin-top: 700px;
+    margin-top: 685px;
     margin-left: 10px;
     margin-bottom: 20px;
     background-size: cover;
@@ -148,7 +148,7 @@ body {
   .p_1 {
     font-family: "Montserrat", sans-serif;
     max-width: 375px;
-    margin-top: 800px;
+    margin-top: 785px;
     font-size: 1.25rem;
     margin-left: 10px;
   }
@@ -177,7 +177,7 @@ body {
     left: 0;
     padding-right: 5px;
     margin-top: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     width: 100%;
     height: 600px;
     background-size: cover;
