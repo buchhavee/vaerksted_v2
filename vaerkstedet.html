@@ -8,10 +8,13 @@
     <title>Vaerkstedet</title>
     <link rel="stylesheet" href="CSS/mutual.css">
     <link rel="stylesheet" href="CSS/vaerkstedet.css">
+
     <link rel="stylesheet" href="https://use.typekit.net/skn6trf.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gqk3wmt.css">
 </head>
 
 <body>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <header>
         <nav class="navbar">
             <div class="navbar-container">
@@ -26,14 +29,14 @@
                         <a href="designers.html" class="menu-item">Designers</a>
                         <a href="vaerkstedet.html" class="menu-item">Værkstedet</a>
                     </div>
-                    <button class="menu-toggle" aria-label="Toggle menu">
-                        <div class="menu-icon">
+                    <a class="menu-toggle" aria-label="Toggle menu">
+                        <span class="menu-icon">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
-                        </div>
-                    </button>
+                        </span>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -41,21 +44,21 @@
         <div class="mobile-menu">
             <div class="mobile-menu-container">
                 <div class="mobile-menu-header">
-                    <button class="close-menu" aria-label="Close menu">
+                    <a class="close-menu" aria-label="Close menu">
                         <span class="menu-icon close-icon">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
                         </span>
-                    </button>
+                    </a>
                 </div>
                 <nav class="mobile-nav">
-                    <a href="index.html" class="menu-item">Hjem</a>
-                    <a href="smykker.html" class="menu-item">Smykker</a>
-                    <a href="om_os.html" class="menu-item">Om os</a>
-                    <a href="designers.html" class="menu-item">Designers</a>
-                    <a href="vaerkstedet.html" class="menu-item">Værkstedet</a>
+                    <a href="index.html" class="menu-item mobile">Hjem</a>
+                    <a href="smykker.html" class="menu-item mobile">Smykker</a>
+                    <a href="om_os.html" class="menu-item mobile">Om os</a>
+                    <a href="designers.html" class="menu-item mobile">Designers</a>
+                    <a href="vaerkstedet.html" class="menu-item mobile">Værkstedet</a>
                 </nav>
             </div>
         </div>
@@ -64,7 +67,7 @@
     <main>
         <section>
             <div class="grid_1-1">
-                <img src="Billeder/img1_om_os.webp" alt="Udenfor ind">
+                <img class="grow" src="Billeder/vaerkstedet_billeder/vaerkstedet.webp" alt="vaerkstedet">
                 <div>
                     <h2>Butik & værksted i ét</h2>
                     <p>
@@ -72,35 +75,28 @@
                         summer
                         butikken ofte af vores designere der arbejder. <br><br>
                         Alle smykker i butikkens udstilling er håndlavede og vi har stor erfaring med både omsmeltninger
-                        og
-                        alle
-                        typer af reparationer.
+                        og alle typer af reparationer.
                     </p>
                 </div>
             </div>
-            <div class="mobile_1-1">
+            <div class="box2">
                 <h2>Smykker til alle anledninger</h2>
-
-                <img class="img2" src="Billeder/vaerkstedet_billeder/blomster.webp" alt="smykke">
+                <img class="grow" src="Billeder/vaerkstedet_billeder/blomster.webp" alt="smykke">
                 <div>
                     <p>
                         Hvad enten I ønsker et håndlavet smykke i de mest ekslusive materialer, eller hurtigt
-                        skal
-                        finde
-                        en
-                        lille, håndlavet ting til en person I har kær, så har Vaerkstedet en bredde og dybde i
-                        udvalget.
+                        skal finde en lille, håndlavet ting til en person I har kær, så har Vaerkstedet en bredde og
+                        dybde i udvalget.
                     </p>
-
                 </div>
             </div>
-
         </section>
 
         <section class="grid_1-1">
             <div>
                 <h2>Send os en mail</h2>
-                <p>Har du et spørgsmål til vores smykker - eller har du fået en ide til et smykke - så tøv ikke med at
+                <p>
+                    Har du et spørgsmål til vores smykker - eller har du fået en ide til et smykke - så tøv ikke med at
                     skrive til Værkstedet.
                 </p>
             </div>
