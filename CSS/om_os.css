@@ -2,96 +2,112 @@ body {
   overflow: auto;
 }
 
-/* Main Om os */
+/* Main - Mobile-view*/
 
-.hero-image {
-  position: absolute;
-  display: flex;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 400px;
-  background-image: url(../Billeder/om-os_billeder/om_os_hero.webp);
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
+/* Hero image */
+
+@media (max-width: 768px) {
+  .hero-image {
+    position: absolute;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    background-image: url(../Billeder/om-os_billeder/om_os_hero.webp);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.152);
+    z-index: 0;
+  }
+
+  /* H1 */
+
+  .h1_container {
+    position: absolute;
+    margin-top: 325px;
+  }
+
+  .h1_2_container {
+    position: absolute;
+  }
+
+  .h1,
+  .h1_2 {
+    font-size: 1.75rem;
+    font-family: "swear-display", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  /* Microcopy */
+
+  .p1 {
+    margin-top: 395px;
+  }
+
+  .p2 {
+    margin-top: 80px;
+  }
+
+  .p1,
+  .p2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+  }
+
+  /* Billeder */
+
+  .img1_container {
+    margin-right: 10px;
+    margin-top: 400px;
+  }
+
+  .img2_container {
+    margin-top: 75px;
+    margin-bottom: 25px;
+  }
+
+  .img1_container img,
+  .img2_container img {
+    width: 100%;
+    height: 325px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: ease 0.3s;
+  }
+
+  /* Main - grid // mobileview */
+
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .h1_container_desktop {
+    display: none;
+  }
 }
 
-.h1_1 {
-  position: absolute;
-  display: flex;
-  margin-top: 325px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-
-.h1_2 {
-  position: absolute;
-  display: flex;
-  margin-bottom: 20px;
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-
-.p_1 {
-  font-family: "Montserrat", sans-serif;
-  margin-top: 395px;
-  font-size: 0.9rem;
-  margin-left: 10px;
-}
-
-.p_2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem;
-  margin-right: 10px;
-  margin-top: 80px;
-}
-
-.img1_om_os {
-  background-image: url(../Billeder/om-os_billeder/img1_om_os.webp);
-  right: 0;
-  margin-right: 10px;
-  margin-top: 400px;
-  width: 100%;
-  height: 325px;
-  background-size: cover;
-  border-radius: 5px;
-}
-
-.img2_om_os {
-  background-image: url(../Billeder/om-os_billeder/img3_om_os.webp);
-  left: 0;
-  padding-right: 5px;
-  margin-top: 75px;
-  margin-bottom: 25px;
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  border-radius: 5px;
-}
-
-/* main // grid - mobile */
-
-.grid_om_os {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 40px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.h1_2_div_2 {
-  display: none;
-}
+/************************************** Main - Desktop-view ***********************************/
 
 @media (min-width: 768px) {
+  /* Hero image */
+
   .hero-image {
     position: absolute;
     display: flex;
@@ -102,104 +118,111 @@ body {
     background-image: url(../Billeder/om-os_billeder/om_os_hero.webp);
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    justify-content: center;
+    align-items: center;
     z-index: -1;
   }
 
-  .h1_div {
-    display: flex;
-    justify-content: center;
-  }
-
-  .h1_1 {
+  .hero-overlay {
     position: absolute;
-    display: flex;
-    margin-top: 685px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    font-size: 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    background-color: rgba(0, 0, 0, 0.152);
+    z-index: 0;
   }
 
-  .h1_2_div {
+  /* H1 */
+
+  .h1_container {
     display: flex;
-    justify-content: right;
+    justify-content: center;
+  }
+
+  .h1 {
+    position: absolute;
+    margin-top: 660px;
   }
 
   .h1_2 {
     position: absolute;
+    margin-top: 80px;
+  }
+
+  .h1,
+  .h1_2 {
+    font-size: 2.5rem;
+    font-family: "swear-display", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  /* Microcopy */
+
+  .p_container {
     display: flex;
-    order: 5;
-    margin-top: 105px;
-    margin-bottom: 20px;
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    font-size: 2rem;
-  }
-
-  .p_div {
-    display: flex;
     justify-content: center;
   }
 
-  .p_1 {
-    font-family: "Montserrat", sans-serif;
-    max-width: 375px;
-    margin-top: 785px;
-    font-size: 1.25rem;
-    margin-left: 10px;
+  .p1 {
+    margin-top: 760px;
+    margin-left: 45px;
   }
 
-  .p_2 {
-    font-family: "Montserrat", sans-serif;
-    max-width: 275px;
-    font-size: 1.25rem;
-    margin-right: 10px;
-    margin-top: 200px;
+  .p2 {
+    margin-top: 180px;
   }
 
-  .img1_om_os {
-    background-image: url(../Billeder/om-os_billeder/img1_om_os.webp);
-    right: 0;
-    margin-right: 10px;
+  .p1,
+  .p2 {
+    font-family: "Montserrat", sans-serif;
+    max-width: 325px;
+    font-size: 1.25rem;
+  }
+
+  /* Billeder */
+
+  .img1_container {
+    padding-right: 20px;
     margin-top: 595px;
+  }
+
+  .img2_container {
+    padding-left: 20px;
+  }
+
+  .img1_container img,
+  .img2_container img {
     width: 100%;
     height: 600px;
     background-size: cover;
-    border-radius: 5px;
+    border-radius: 10px;
+    transition: ease 0.3s;
+    object-fit: cover;
   }
 
-  .img2_om_os {
-    background-image: url(../Billeder/om-os_billeder/img3_om_os.webp);
-    left: 0;
-    padding-right: 5px;
-    margin-top: 0px;
-    margin-bottom: 40px;
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    border-radius: 5px;
+  .img1_container img:hover,
+  .img2_container img:hover {
+    transform: scale(1.025);
+    transition: ease 0.3s;
+    border-radius: 20px;
+    box-shadow: 5px 10px #888888;
   }
 
-  /* main // grid - desktop */
+  /* Main - grid // desktop */
 
-  .grid_om_os {
+  .grid_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    margin-bottom: 12.5px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-bottom: 30px;
   }
 
-  .h1_2_div {
+  .h1_2_container {
     display: none;
   }
 
-  .h1_2_div_2 {
+  .h1_container_desktop {
     display: flex;
   }
 }
