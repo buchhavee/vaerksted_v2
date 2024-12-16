@@ -11,6 +11,9 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/skn6trf.css">
     <link rel="stylesheet" href="https://use.typekit.net/gqk3wmt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -93,34 +96,22 @@
         </section>
 
         <section class="grid_1-1">
-            <div>
+            <div class="cta-form">
                 <h2>Send os en mail</h2>
                 <p>
                     Har du et spørgsmål til vores smykker - eller har du fået en ide til et smykke - så tøv ikke med at
                     skrive til Værkstedet.
                 </p>
             </div>
-            <form>
-                <div class="form-felt">
-                    <label for="email">email
-                        <input id="email" name="email" type="email" required>
-                    </label>
-                </div>
+            <form action="" class="form">
+                <input type="text" placeholder="Name" class="form__input" id="name" />
+                <label for="name" class="form__label">Name</label>
 
-                <div class="form-felt">
-                    <label for="emne">emne
-                        <input id="emne" name="emne" type="text" required>
-                    </label>
-                </div>
+                <input type="email" placeholder="Email" class="form__input" id="email" />
+                <label for="email" class="form__label">Email</label>
 
-                <div class="form-felt">
-                    <label>
-                        besked
-                        <textarea name="besked" rows="5"></textarea>
-                    </label>
-                </div>
-
-                <button>Send</button>
+                <input type="text" placeholder="Subject" class="form__input" id="subject" />
+                <label for="subject" class="form__label">Subject</label>
             </form>
         </section>
     </main>
@@ -132,13 +123,38 @@
         </div>
         <div class="footer-center">
             <h1>Kontakt</h1>
-            <p>Ryesgade 4</p>
-            <p>Copenhagen, Denmark</p>
-            <p>info@vaerk-stedet.dk</p>
+            <div class="kort">
+                <a href="https://maps.app.goo.gl/m47SuQXVnkU72sGLA">
+                    <p>Ryesgade 4, Copenhagen, Denmark</p>
+                </a>
+            </div>
+            <div class="social">
+                <a href="mailto:info@vaerk-stedet.dk">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>info@vaerk-stedet.dk</p>
+                </a>
+            </div>
         </div>
         <div class="footer-right">
             <h1>Følg os</h1>
-            <p>Facebook, Instagram, Pinterest</p>
+            <div class="social">
+                <a href="https://www.instagram.com/vaerkstedet2200/">
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>instagram</p>
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/Vaerkstedet2200">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <p>facebook</p>
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://www.gmail.com">
+                    <i class="fa-brands fa-pinterest"></i>
+                    <p>pinterest</p>
+                </a>
+            </div>
         </div>
     </footer>
 
