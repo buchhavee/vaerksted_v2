@@ -1,10 +1,10 @@
 body {
-  overflow: auto;
+  overflow-x: hidden;
 }
 
-/* Main - Mobile-view*/
+/* Main - mobile-view*/
 
-/* Hero image */
+/* hero image */
 
 @media (max-width: 768px) {
   .hero-image {
@@ -15,9 +15,6 @@ body {
     height: 400px;
     background-image: url(../Billeder/om-os_billeder/om_os_hero.webp);
     background-size: cover;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
     z-index: -1;
   }
 
@@ -118,8 +115,6 @@ body {
     background-image: url(../Billeder/om-os_billeder/om_os_hero.webp);
     background-attachment: fixed;
     background-size: cover;
-    justify-content: center;
-    align-items: center;
     z-index: -1;
   }
 
@@ -207,7 +202,6 @@ body {
     transform: scale(1.025);
     transition: ease 0.3s;
     border-radius: 20px;
-    box-shadow: 5px 10px #888888;
   }
 
   /* Main - grid // desktop */
