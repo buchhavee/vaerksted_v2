@@ -266,6 +266,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  padding-inline: 10px;
 }
 
 .footer-section {
