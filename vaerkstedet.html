@@ -8,14 +8,16 @@
     <meta name="description"
         content="Vaerkstedet kombinerer butik og værksted i hjertet af København. Håndlavede smykker, omsmeltninger og reparationer til alle anledninger. Besøg os og oplev ægte håndværk." />
     <title>Vaerkstedet</title>
-    <link rel="shortcut icon" href="Billeder/favicon.svg" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Billeder/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Billeder/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Billeder/favicon_io/favicon-16x16.png">
+
     <link rel="stylesheet" href="CSS/mutual.css">
     <link rel="stylesheet" href="CSS/vaerkstedet.css">
+
     <link rel="stylesheet" href="https://use.typekit.net/skn6trf.css">
     <link rel="stylesheet" href="https://use.typekit.net/gqk3wmt.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -81,6 +83,12 @@
                         Alle smykker i butikkens udstilling er håndlavede og vi har stor erfaring med både omsmeltninger
                         og alle typer af reparationer.
                     </p>
+                    <p class="extra_text">
+                        <br><br>
+                        Det er beliggende i det hastigt udviklende Nørrebro, tæt på søerne med Ravnsborggade som nabo.
+                        En gade, fuld af liv
+                        og kreativitet.
+                    </p>
                 </div>
             </div>
             <div class="box2">
@@ -91,6 +99,12 @@
                         Hvad enten I ønsker et håndlavet smykke i de mest ekslusive materialer, eller hurtigt
                         skal finde en lille, håndlavet ting til en person I har kær, så har Vaerkstedet en bredde og
                         dybde i udvalget.
+                    </p>
+                    <p class="extra_text2">
+                        <br><br>
+                        Vi tilbyder voresekspertise ved alle typer af specialopgaver og fremstilling af forlovelses- og
+                        vielsesringe. Det guld og sølv vi arbejder i er recirkuleret og vi arbejder med ubehandlede
+                        ædelsten og perler.
                     </p>
                 </div>
             </div>
@@ -105,55 +119,71 @@
                 </p>
             </div>
             <form action="" class="form">
-                <input type="text" placeholder="Name" class="form__input" id="name" />
+                <input type="text" placeholder=" " class="form__input" id="name" />
                 <label for="name" class="form__label">Name</label>
 
-                <input type="email" placeholder="Email" class="form__input" id="email" />
+                <input type="email" placeholder=" " class="form__input" id="email" />
                 <label for="email" class="form__label">Email</label>
 
-                <input type="text" placeholder="Subject" class="form__input" id="subject" />
+                <input type="text" placeholder=" " class="form__input" id="subject" />
                 <label for="subject" class="form__label">Subject</label>
+                <div class="button">
+                    <button>Send</button>
+                </div>
             </form>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-left">
-            <h1>Vaerkstedet</h1>
-            <p>Håndlavet elegance siden 2015 <br>
-                Åbningstider: ons-fre: 12-18/lør: 11-15
-            </p>
-        </div>
-        <div class="footer-center">
-            <h1>Kontakt</h1>
-            <div class="kort">
-                <a href="https://maps.app.goo.gl/m47SuQXVnkU72sGLA">
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-heading">Vaerkstedet</h2>
+                <p class="footer-text">
+                    Håndlavet elegance siden 2015<br>
+                    Åbningstider: ons-fre: 12-18/lør: 11-15
+                </p>
+            </div>
+            <div class="footer-section">
+                <h2 class="footer-heading">Kontakt</h2>
+                <a href="https://maps.app.goo.gl/m47SuQXVnkU72sGLA" class="footer-link">
                     <p>Ryesgade 4, Copenhagen, Denmark</p>
                 </a>
+                <div>
+                    <a href="mailto:info@vaerkstedet.dk" class="footer-link footer-email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="footer-icon">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        <span>info@vaerkstedet.dk</span>
+                    </a>
+                </div>
             </div>
-            <div class="social">
-                <a href="mailto:info@vaerk-stedet.dk">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>info@vaerk-stedet.dk</p>
-                </a>
+            <div class="footer-section">
+                <h2 class="footer-heading">Følg os</h2>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/vaerkstedet2200/" class="footer-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="footer-icon">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/Vaerkstedet2200" class="footer-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="footer-icon">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="footer-right">
-            <h1>Følg os</h1>
-            <div class="social">
-                <a href="https://www.instagram.com/vaerkstedet2200/">
-                    <i class="fa-brands fa-instagram"></i>
-                    <p>instagram</p>
-                </a>
-            </div>
-            <div class="social">
-                <a href="https://www.facebook.com/Vaerkstedet2200">
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <p>facebook</p>
-                </a>
-            </div>
-        </div>
-        <img src="Billeder/vaerkstedet_billeder/icon.png" alt="icon">
     </footer>
 
     <script src="JS/menu.js"></script>

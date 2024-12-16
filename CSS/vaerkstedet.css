@@ -25,64 +25,6 @@ main {
   background: #000000;
 }
 
-/**********  footer **********/
-@media (max-width: 762px) {
-  footer {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
-    /* height: none; !!*/
-  }
-}
-
-@media (min-width: 762px) {
-  footer img {
-    display: none;
-  }
-}
-
-.footer-right,
-.footer-left {
-  text-align: center;
-}
-
-footer h1 {
-  font-family: the-seasons, sans-serif;
-}
-
-footer.p {
-  text-align: justify;
-  margin-inline: 17px;
-  font-size: 1.2rem;
-}
-
-.social {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  margin: 5px 0;
-  padding-left: 4rem;
-}
-
-.social a,
-.kort a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: unset;
-  text-decoration: none;
-}
-
-.social i {
-  font-size: 20px;
-  color: white;
-}
-
-.social a:hover,
-.kort a:hover {
-  opacity: 0.7;
-}
-
 /********** layout **********/
 .grid_1-1 {
   display: grid;
@@ -93,8 +35,8 @@ footer.p {
 .box2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 18cqw;
-  margin-bottom: 18cqw;
+  margin-top: 14cqw;
+  margin-bottom: 14cqw;
   h2 {
     grid-column: span 2;
   }
@@ -104,6 +46,12 @@ footer.p {
   img {
     max-width: 95%; /* scale to mobile size */
     align-self: center;
+  }
+}
+
+@media (max-width: 630px) {
+  .extra_text2 {
+    display: none;
   }
 }
 
@@ -134,6 +82,11 @@ footer.p {
   }
 }
 
+@media (max-width: 1200px) {
+  .extra_text {
+    display: none;
+  }
+}
 /********** hover effect on img **********/
 .grow {
   transition: 1s ease;
@@ -148,10 +101,11 @@ footer.p {
 
 /********** form **********/
 form {
-  background-color: #dfe1e4;
+  background-color: #dddad7;
   font-size: 1rem;
   font-family: "swear-display", serif;
   border-radius: 5px;
+  padding: 1rem;
 }
 
 .form__input {
@@ -162,8 +116,8 @@ form {
   border-radius: 2px;
   margin: 0.625rem auto;
   transition: all 250ms;
-  /* justify-items: center;
-  display: grid; */
+  justify-items: center;
+  display: grid;
 }
 
 /* form__input class is in focus */
@@ -199,4 +153,28 @@ form {
   transform-origin: 0 0; /* Used later for transitions */
   transition: all 500ms;
   pointer-events: none;
+}
+
+/********** send button  **********/
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #d7b37b;
+  color: #fafffd;
+  width: 80px;
+  height: 34px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transform: scale(1); /* initial size */
+  transition: transform 1s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.2); /* scales when hovering */
 }
