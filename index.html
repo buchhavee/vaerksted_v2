@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="CSS/mutual.css">
     <link rel="stylesheet" href="CSS/index.css">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="Billeder/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Billeder/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Billeder/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="Billeder/favicon_io/site.webmanifest">
+
     <link rel="stylesheet" href="https://use.typekit.net/skn6trf.css">
     <link rel="stylesheet" href="https://use.typekit.net/gqk3wmt.css">
 </head>
@@ -19,7 +24,7 @@
             <div class="navbar-container">
                 <div class="navbar-content">
                     <div class="navbar-logo">
-                        <a href="/" class="logo-link">Vaerkstedet</a>
+                        <a href="index.html" class="logo-link">Vaerkstedet</a>
                     </div>
                     <div class="navbar-menu">
                         <a href="index.html" class="menu-item">Hjem</a>
@@ -85,81 +90,141 @@
                 bæredygtighed.
             </p>
 
-            <button>
+            <a href="smykker.html" class="udforsk-btn">
                 Udforsk
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
-            </button>
+            </a>
         </div>
     </section>
 
     <section id="call_cards">
-        <h2 class="section_heading">
+        <h2 class="section-heading">
             Design din drøm ...
         </h2>
         <div class="grid_1-1-1">
-            <!-- Designers card -->
+            <!-- Designers kort -->
             <div class="card">
                 <div class="card-image">
-                    <img src="Billeder/index_billeder/designers.webp" alt="Designers">
+                    <a href="designers.html">
+                        <img src="Billeder/index_billeder/designers.webp" alt="Designers">
+                    </a>
                 </div>
                 <div class="card-content">
-                    <h2>Designers</h2>
-                    <p>Vaerkstedet eksponerer en række dygtige designere, i butikken i Ryesgade. Vi glæder os til at
-                        vise jer vores
-                        store udvalg</p>
-                    <button class="learn-more">
+                    <a href="designers.html">
+                        <h2>Designers</h2>
+                        <p>Vaerkstedet eksponerer en række dygtige designere, i butikken i Ryesgade. Vi glæder os til at
+                            vise jer vores
+                            store udvalg</p>
+                    </a>
+                    <a href="designers.html" class="learn-more">
                         Lær mere
                         <svg viewBox="0 0 24 24">
                             <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
 
-            <!-- Om os card -->
+            <!-- Om os kort -->
             <div class="card">
                 <div class="card-image">
-                    <img src="Billeder/index_billeder/om_os.webp" alt="Om os">
+                    <a href="om_os.html">
+                        <img src="Billeder/index_billeder/om_os.webp" alt="Om os">
+                    </a>
                 </div>
                 <div class="card-content">
-                    <h2>Om os</h2>
-                    <p>Nær søerne, med Ravnsborggade som nabo, ligger Vaerkstedet. Vi har smykker til at alle
-                        anledninger og i alle
-                        prisniveauer</p>
-                    <button class="learn-more">
+                    <a href="om_os.html">
+                        <h2>Om os</h2>
+                        <p>Nær søerne, med Ravnsborggade som nabo, ligger Vaerkstedet. Vi har smykker til at alle
+                            anledninger og i alle
+                            prisniveauer</p>
+                    </a>
+                    <a href="om_os.html" class="learn-more">
                         Lær mere
                         <svg viewBox="0 0 24 24">
                             <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
 
-            <!-- Værkstedet card -->
+            <!-- Værkstedet kort -->
             <div class="card">
                 <div class="card-image">
-                    <img src="Billeder/index_billeder/vaerkstedet.webp" alt="Værkstedet">
+                    <a href="vaerkstedet.html">
+                        <img src="Billeder/index_billeder/vaerkstedet.webp" alt="Værkstedet">
+                    </a>
                 </div>
                 <div class="card-content">
-                    <h2>Værkstedet</h2>
-                    <p>Vaerkstedet dyrker kundeplejen. Smykkedesignere har en naturlig fascination af ædelmetallers
-                        skønhed.</p>
-                    <button class="learn-more">
+                    <a href="vaerkstedet.html">
+                        <h2>Værkstedet</h2>
+                        <p>Vaerkstedet dyrker kundeplejen. Smykkedesignere har en naturlig fascination af ædelmetallers
+                            skønhed.</p>
+                    </a>
+                    <a href="vaerkstedet.html" class="learn-more">
                         Lær mere
                         <svg viewBox="0 0 24 24">
                             <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-heading">Vaerkstedet</h2>
+                <p class="footer-text">
+                    Håndlavet elegance siden 2015<br>
+                    Åbningstider: ons-fre: 12-18/lør: 11-15
+                </p>
+            </div>
+            <div class="footer-section">
+                <h2 class="footer-heading">Kontakt</h2>
+                <a href="https://maps.app.goo.gl/m47SuQXVnkU72sGLA" class="footer-link">
+                    <p>Ryesgade 4, Copenhagen, Denmark</p>
+                </a>
+                <div>
+                    <a href="mailto:info@vaerkstedet.dk" class="footer-link footer-email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="footer-icon">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        <span>info@vaerkstedet.dk</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h2 class="footer-heading">Følg os</h2>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/vaerkstedet2200/" class="footer-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="footer-icon">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/Vaerkstedet2200" class="footer-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="footer-icon">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="JS/menu.js"></script>

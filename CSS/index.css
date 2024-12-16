@@ -13,7 +13,12 @@
 
 .hero_text h2 {
   margin-bottom: 10px;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+}
+
+.hero_text p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .hero-overlay {
@@ -24,10 +29,6 @@
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
-}
-
-.hero_text p {
-  margin-bottom: 1rem;
 }
 
 .hero-image {
@@ -58,8 +59,9 @@
 
 /* Styling af knap */
 
-button {
+.udforsk-btn {
   border: none;
+  text-decoration: none;
   background: none;
   cursor: pointer;
   position: relative;
@@ -67,16 +69,13 @@ button {
   font-weight: 600;
   gap: 0.8rem;
   align-items: center;
-}
-
-button {
   margin: 0;
   position: relative;
   font-size: 1.5rem;
   color: var(--white);
 }
 
-button::after {
+.udforsk-btn::after {
   position: absolute;
   content: "";
   width: 0;
@@ -87,9 +86,8 @@ button::after {
   transition: 0.3s ease-out;
 }
 
-button p::before {
+.udforsk-btn a::before {
   position: absolute;
-  content: "Udforsk";
   width: 0%;
   inset: 0;
   color: var(--gold);
@@ -97,20 +95,20 @@ button p::before {
   transition: 0.3s ease-out;
 }
 
-button:hover::after {
-  width: 100%;
+.udforsk-btn:hover::after {
+  width: 26%;
 }
 
-button:hover p::before {
-  width: 100%;
+.udforsk-btn:hover a::before {
+  width: 26%;
 }
 
-button:hover svg {
+.udforsk-btn:hover svg {
   transform: translateX(4px);
   color: var(--gold);
 }
 
-button svg {
+.udforsk-btn svg {
   color: var(--white);
   transition: 0.2s;
   position: relative;
@@ -139,14 +137,14 @@ section {
 
 /** call cards **/
 
-.section_heading {
+.section-heading {
   font-family: "swear-display", serif;
   font-weight: 500;
   font-style: italic;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   opacity: 30%;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .card {
@@ -209,6 +207,10 @@ section {
   border: none;
   cursor: pointer;
   padding: 0;
+}
+
+.card-content a {
+  text-decoration: none;
 }
 
 .learn-more:hover {
