@@ -48,6 +48,16 @@ p {
   width: 100%;
 }
 
+h1 {
+  font-family: "swear-display", serif;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  font-size: 3.5rem;
+  opacity: 45%;
+  margin-bottom: 25px;
+}
+
 /***** mobile ****/
 
 @media (max-width: 666px) {
@@ -148,60 +158,3 @@ p {
 }
 
 /***** footer *****/
-
-@media (max-width: 762px) {
-  footer {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
-    /* height: none; !!*/
-  }
-}
-
-@media (min-width: 762px) {
-  footer img {
-    display: none;
-  }
-}
-
-.footer-right,
-.footer-left {
-  text-align: center;
-}
-
-footer h1 {
-  font-family: the-seasons, sans-serif;
-}
-
-footer.p {
-  text-align: justify;
-  margin-inline: 17px;
-  font-size: 1.2rem;
-}
-
-.social {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  margin: 5px 0;
-  padding-left: 4rem;
-}
-
-.social a,
-.kort a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: unset;
-  text-decoration: none;
-}
-
-.social i {
-  font-size: 20px;
-  color: white;
-}
-
-.social a:hover,
-.kort a:hover {
-  opacity: 0.7;
-}
