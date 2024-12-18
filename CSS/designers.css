@@ -35,13 +35,16 @@
 
 /* Main */
 
-.image1 img {
-  display: flex;
+.image1 img,
+.image2 img {
   object-fit: cover;
   width: 100%;
-  height: 250px;
   border-radius: 15px;
   padding: 10px;
+}
+
+.image2 {
+  padding-top: 30px;
 }
 
 .text_container {
@@ -52,19 +55,18 @@
 .text_container2 {
   display: flex;
   justify-content: center;
+  margin-bottom: 45px;
 }
 
 .h1_container {
   position: absolute;
-  margin-top: 15px;
 }
 
-h1 {
-  font-size: 1.75rem;
-  font-family: "swear-display", serif;
-  font-weight: 500;
-  font-style: normal;
-  text-align: center;
+h1,
+.h2 h1 {
+  font-family: the-seasons, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 p {
@@ -72,63 +74,39 @@ p {
 }
 
 .p_container {
-  margin-top: 75px;
+  margin-top: 65px;
   padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 25px;
-}
-
-.h2 {
-  position: absolute;
-  margin-top: 15px;
-}
-
-.h2 h1 {
-  font-size: 1.75rem;
-  font-family: "swear-display", serif;
-  font-weight: 500;
-  font-style: normal;
-  text-align: center;
-}
-
-.image2 img {
-  margin-top: 15px;
-  display: flex;
-  object-fit: cover;
-  width: 100%;
-  height: 250px;
-  border-radius: 15px;
-  padding: 10px;
 }
 
 @media (min-width: 768px) {
+  .logo-link {
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: var(--blue);
+    text-decoration: none;
+  }
+
   .grid_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .text_container2 {
     order: -1;
   }
 
-  .image1 {
-    margin-top: 50px;
+  .image1 img,
+  .image2 img {
+    height: 500px;
+    border-radius: 15px;
+    transition: ease 0.3s;
+    object-fit: cover;
   }
 
   .image2 {
-    margin-bottom: 50px;
-  }
-
-  .image1 img,
-  .image2 img {
-    margin-top: 15px;
-    display: flex;
-    object-fit: cover;
-    width: 100%;
-    height: 500px;
-    border-radius: 15px;
-    padding: 10px;
-    transition: ease 0.3s;
+    padding-top: 0;
   }
 
   .image1 img:hover,
@@ -139,18 +117,19 @@ p {
   }
 
   .h1_container {
-    display: flex;
-    position: absolute;
     margin-top: 125px;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .p_container {
-    font-size: 1.5rem;
     margin-top: 200px;
     max-width: 350px;
+  }
+
+  footer p {
+    font-size: 0.875rem;
   }
 }

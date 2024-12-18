@@ -41,10 +41,9 @@ body {
 
   .h1,
   .h1_2 {
-    font-size: 1.75rem;
-    font-family: "swear-display", serif;
-    font-weight: 500;
-    font-style: normal;
+    font-family: the-seasons, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
   }
 
   /* Microcopy */
@@ -59,7 +58,7 @@ body {
 
   .p1,
   .p2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "asterisk-sans-variable", sans-serif;
     font-size: 0.9rem;
   }
 
@@ -147,10 +146,9 @@ body {
 
   .h1,
   .h1_2 {
-    font-size: 2.5rem;
-    font-family: "swear-display", serif;
-    font-weight: 500;
-    font-style: normal;
+    font-family: the-seasons, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
   }
 
   /* Microcopy */
@@ -162,7 +160,7 @@ body {
 
   .p1 {
     margin-top: 760px;
-    margin-left: 45px;
+    margin-left: 80px;
   }
 
   .p2 {
@@ -171,7 +169,6 @@ body {
 
   .p1,
   .p2 {
-    font-family: "Montserrat", sans-serif;
     max-width: 325px;
     font-size: 1.25rem;
   }
