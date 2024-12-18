@@ -105,6 +105,31 @@ body {
   position: relative;
 }
 
+.menu-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--gold);
+  transition: width 0.3s ease-out, left 0.3s ease-out;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  color: var(--gold);
+}
+
+.mobile .menu-item {
+  color: var(--blue);
+}
+
+.mobile .menu-item:hover,
+.mobile .menu-item.active {
+  color: var(--gold);
+}
+
 .mobile {
   color: #061432;
 }
@@ -120,7 +145,8 @@ body {
   transition: width 0.3s ease-out, left 0.3s ease-out;
 }
 
-.menu-item:hover::after {
+.menu-item:hover::after,
+.menu-item.active::after {
   width: 100%;
   left: 0;
 }
@@ -244,12 +270,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-.mobile-nav {
   color: #333;
   text-decoration: none;
   text-align: center;
+}
+
+.mobile-nav a {
+  max-width: 200px;
+  margin-inline: auto;
 }
 
 /* footer */
