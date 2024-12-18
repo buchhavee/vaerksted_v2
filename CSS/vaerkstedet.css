@@ -7,7 +7,7 @@ img {
 }
 
 main {
-  max-width: 1200px;
+  padding: 50px;
   margin-inline: auto;
   margin: 10cqw;
 }
