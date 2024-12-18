@@ -129,6 +129,7 @@ h1 {
 
     aspect-ratio: 1.4/2;
     width: 70%;
+    min-width: 355px;
   }
 
   .kvadrat2_kasse {
